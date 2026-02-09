@@ -57,6 +57,7 @@ def get_spectrogram(audio):
     # Adding channel dimensions since CNNs expect inputs like h, w, channels
     spectrogram = tf.expand_dims(spectrogram, axis=2)
     
+    print(spectrogram)
     return spectrogram
 
 
